@@ -100,7 +100,7 @@ async function fetchWeatherReport(searchCity) {
 }
 
 
-fetchWeatherReport("phagwara");
+fetchWeatherReport("J&K");
 
 searchCity.addEventListener("keyup", () => {
   fetchWeatherReport(searchCity.value);
