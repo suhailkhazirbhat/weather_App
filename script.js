@@ -85,7 +85,7 @@ var data;
 async function fetchWeatherReport(searchCity) {
   try{
     response = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=2b894fd71873476c9ce210205230410&q=awantipora&days=7&aqi=yes&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${searchCity}&days=7&aqi=yes&alerts=no`
     );
     data = await response.json();
   
